@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-size: 100%;
+    /* background: linear-gradient(68deg, #2F2325 16.62%, #8E5D52 85.61%); */
+    background: rgba(220, 6, 44, 0.70);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px; /* vai afastar os elementos do topo da página */
+    background: rgba(48, 0, 186, 0.76);
+}
+
+
+.cabecalho-menu {
+    display: flex;
+    gap: 30px;
+}
+
+.link-links {
+    color: #fff;
+    cursor: pointer;
+    padding: 24px;
+}
+
+.link-links:active {
+    transform: scale(1.1) translate(2px, 2px); /* Aumenta o tamanho e move ligeiramente para fora quando clicado */
+    transition: transform 0.2s ease; /* Adiciona uma transição suave para a transformação */
+}
+
+
+.conteudo {
+    border-top: 0.3px solid #fff;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; /* separou a imagem do h1 e do h2*/
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-titulo {
+    font-size: 40px;
+    color: #fff;
+}
+
+.conteudo-subtitulo {
+    color: #FFF;
+}
+
+.botao {
+    background-color: #ECD6C4;
+    width: 130px;
+    height: 40px;
+    border-radius: 18px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0);
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave para a mudança de cor */
+}
+
+.botao:active {
+    background-color: #d37b53; /* Altera a cor do fundo quando o botão está sendo clicado */
+}
+
+.rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background: rgba(48, 0, 186, 0.76);
+    width: 100%;
+    height: 185px;
+}
+
